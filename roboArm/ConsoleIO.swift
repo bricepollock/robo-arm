@@ -16,7 +16,7 @@ extension FileHandle: TextOutputStream {
     }
 }
 
-let programUsagePrompt = "Start the program by specifying the number of slots using the size method.\n\n\(ArmCommands.size.usageDescription())"
+let programUsagePrompt = "Start the program by specifying the number of slots using the size method.\n\n\(ArmCommands.size.usageDescription())\n"
 
 func printProgramUsage(programName: String) {
     for command in ArmCommands.allValues {

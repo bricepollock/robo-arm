@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "40B73D3C1E69C065006DB43B"
-               BuildableName = "roboArm"
-               BlueprintName = "roboArm"
+               BuildableName = "robo-arm"
+               BlueprintName = "robo-arm"
                ReferencedContainer = "container:roboArm.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "40B73D3C1E69C065006DB43B"
-            BuildableName = "roboArm"
-            BlueprintName = "roboArm"
+            BuildableName = "robo-arm"
+            BlueprintName = "robo-arm"
             ReferencedContainer = "container:roboArm.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,8 +66,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "40B73D3C1E69C065006DB43B"
-            BuildableName = "roboArm"
-            BlueprintName = "roboArm"
+            BuildableName = "robo-arm"
+            BlueprintName = "robo-arm"
             ReferencedContainer = "container:roboArm.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -91,8 +91,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "40B73D3C1E69C065006DB43B"
-            BuildableName = "roboArm"
-            BlueprintName = "roboArm"
+            BuildableName = "robo-arm"
+            BlueprintName = "robo-arm"
             ReferencedContainer = "container:roboArm.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

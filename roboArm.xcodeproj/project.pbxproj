@@ -34,7 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		40B73D3D1E69C065006DB43B /* roboArm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = roboArm; sourceTree = BUILT_PRODUCTS_DIR; };
+		40B73D3D1E69C065006DB43B /* robo-arm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "robo-arm"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B73D401E69C065006DB43B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		40B73D471E69C19F006DB43B /* enum+collection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "enum+collection.swift"; sourceTree = "<group>"; };
 		40B73D491E69C600006DB43B /* ArmCommands+validate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ArmCommands+validate.swift"; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		40B73D3E1E69C065006DB43B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				40B73D3D1E69C065006DB43B /* roboArm */,
+				40B73D3D1E69C065006DB43B /* robo-arm */,
 				40B73D4F1E69C824006DB43B /* robotArmTests.xctest */,
 			);
 			name = Products;
@@ -123,21 +123,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		40B73D3C1E69C065006DB43B /* roboArm */ = {
+		40B73D3C1E69C065006DB43B /* robo-arm */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 40B73D441E69C065006DB43B /* Build configuration list for PBXNativeTarget "roboArm" */;
+			buildConfigurationList = 40B73D441E69C065006DB43B /* Build configuration list for PBXNativeTarget "robo-arm" */;
 			buildPhases = (
 				40B73D391E69C065006DB43B /* Sources */,
 				40B73D3A1E69C065006DB43B /* Frameworks */,
 				40B73D3B1E69C065006DB43B /* CopyFiles */,
+				40B73D791E6A6776006DB43B /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = roboArm;
+			name = "robo-arm";
 			productName = roboArm;
-			productReference = 40B73D3D1E69C065006DB43B /* roboArm */;
+			productReference = 40B73D3D1E69C065006DB43B /* robo-arm */;
 			productType = "com.apple.product-type.tool";
 		};
 		40B73D4E1E69C824006DB43B /* robotArmTests */ = {
@@ -191,7 +192,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				40B73D3C1E69C065006DB43B /* roboArm */,
+				40B73D3C1E69C065006DB43B /* robo-arm */,
 				40B73D4E1E69C824006DB43B /* robotArmTests */,
 			);
 		};
@@ -206,6 +207,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40B73D791E6A6776006DB43B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "echo ${TARGET_BUILD_DIR}/${TARGET_NAME}\necho ${PROJECT_DIR}/${TARGET_NAME}\ncp ${TARGET_BUILD_DIR}/${TARGET_NAME} ${PROJECT_DIR}/${TARGET_NAME}";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		40B73D391E69C065006DB43B /* Sources */ = {
@@ -383,7 +400,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		40B73D441E69C065006DB43B /* Build configuration list for PBXNativeTarget "roboArm" */ = {
+		40B73D441E69C065006DB43B /* Build configuration list for PBXNativeTarget "robo-arm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				40B73D451E69C065006DB43B /* Debug */,

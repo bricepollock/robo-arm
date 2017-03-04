@@ -82,7 +82,8 @@ func startInterativeConsole() {
             currentSlotList[slotIndex] -= 1
         case .replay:
             // TODO: I prioritized unit tests, testing and other design over implementing this method
-            // If I had time I'd write a structure that takes the enum + args and then cache those structures like the slotHistory array
+            // The easiest way to accomplish this would just be to store the input string in a history collection.
+            // However, If I had time I'd write a structure that takes the enum + args and then cache those structures in the history array
             standardError.write("This command is not available. Please update your firmware.\n\n")
             continue
         case .undo:
